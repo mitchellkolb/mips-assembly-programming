@@ -45,7 +45,13 @@ Developed MIPS assembly programs using QtSPIM, including a simple calculator for
 - [Team / Contributors / Teachers](#team--contributors--teachers)
 - [How to Set Up](#how-to-set-up)
 - [Project Overview](#project-overview)
-- [References](#references)
+- [Project Details](#project-details)
+  - [Calculator Assembly](#calculator-assembly)
+  - [Array Summation Assembly](#array-summation-assembly)
+- [Implementation Details](#implementation-details)
+- [Files and Structure](#files-and-structure)
+- [Results and Observations](#results-and-observations)
+- [Future Work](#future-work)
 - [Acknowledgments](#acknowledgments)
 
 ---
@@ -79,58 +85,55 @@ Developed MIPS assembly programs using QtSPIM, including a simple calculator for
 
 
 # How to Set Up
-This project was implemented on our local machine inside of a virtual machine using:
-- Ubuntu Version 20.04.03 found at this [link](http://lt.releases.ubuntu.com/20.04.3/).
-- Clone this repository 
-- Open terminal at the codebase `~.../ext2/Noah-Mitchell/`
-
-
-
+This project was implemented on macbook using:
+- Download [QtSPIM](https://spimsimulator.sourceforge.net/) for MacOS, Windows, or Linux.
+- Open QtSPIM at this codebase and run the assembly files you choose.
 
 
 # Project Overview
-This project utilizes 
-
-
+In this project, I used the QtSPIM GUI to develop MIPS assembly programs like a calculator and array manipulator. These exercises were part of my learning in my computer architecture course, specifically we focused on the MIPS architecture. The main goals for this project were managing registers, utilizing system calls, and adhering to MIPS assembly syntax in QtSPIM.
 
 ## Project Details
 
-### Introduction
-In this project, we apply 
+### Calculator Assembly:
+I created a calculator program that requests two integers from the user and performs addition, subtraction, or multiplication based on the user’s input. The operations include:
+- **Addition**: The program calculates the sum of two integers inputed by the user.
+- **Subtraction**: The program calculates the difference between two integers inputed by the user.
+- **Multiplication**: The program calculates the product of two integers inputed by the user.
+- **Key Instructions**: I used `add`, `sub`, and `mul` instructions for computations and system calls for input and output.
 
+### Array Summation Assembly:
+I also developed a program for array manipulation, which defines a 10-element array and includes the ability to find the maximum value and calculate the summation of the array elements.
+- **Array Definition**: The array is initialized with values `{11, 12, -10, 13, 9, 12, 14, 15, -20, 0}`.
+- **Find Maximum**: A function iterates through the array to find the maximum value.
+- **Calculate Summation**: Another function calculates the summation of the array elements.
+- **Key Instructions**: I used `lw`, `sw`, and looping constructs like `beq` and `bne` for iteration.
 
-### Literature Review
-In this we drew inspiration from various sources, including video tutorials online for 
+## Implementation Details
+My code involves:
+- **Managing Registers**: Effective use of registers such as `$t0`, `$t1`, `$a0`, and `$v0` to hold values and results.
+- **System Calls**: Utilizing system calls for reading inputs from the user and printing results.
+- **MIPS Syntax**: Adhering to MIPS assembly language syntax, ensuring correct formatting and usage of instructions.
 
+## Files and Structure
+- **assembly-problem-1.s**: Contains the calculator assembly program.
+- **assembly-problem-2.s**: Contains the array summation assembly program.
+- **assembly-problems.pdf**: Details the project requirements for the programs.
+- **MIPS-Intro-Questions.pdf** and **MIPS-Intro-Answers.pdf**: Documents providing introductory exercises and solutions in MIPS assembly to aid understanding of basic concepts.
 
-### Technical Plan
-The project employs a 
-
-
-### Implementation Details
-
-#### Files and Structure
-- `game.py`: Contains the racing game environment and controls the car's movement.
 > [!NOTE]
-> These files were 
+> These files were initially referred to as HW3 and HW4 but have been relabeled for clarity.
 
+## Results and Observations
+During development, I observed the following:
+- **Calculator Program**: It effectively performed the requested arithmetic operations based on user input. Managing user input and output via system calls was critical.
+- **Array Manipulation Program**: The functions correctly identified the maximum value and calculated the summation of the array elements. Using looping constructs and conditional checks was key to the program's functionality.
 
-### Implementation
-In this project
-
-#### Results and Observations
-During development,
-<p float="left">
-  <img src="resources/image1.png" alt="First Try" width="300" />
-  <img src="resources/image2.png" alt="Final Try" width="307" />
-</p>
-
-#### Future Work
-Future improvements could include
-
-
-
-## References
+## Future Work
+Future improvements to my code could include:
+- **Enhanced Calculator Functions**: Adding more operations like division, modulus, and power.
+- **Dynamic Array Handling**: Implementing functionalities to handle arrays of varying sizes, including dynamic memory allocation.
+- **Error Handling**: Adding error handling to manage invalid inputs and edge cases effectively because right now it just crashes if it's given incorrect input.
 
 
 
