@@ -34,14 +34,15 @@ main:
 	li $v0, 10
 	syscall
 
+GetMaxFunction:
 	#this loops the temporary registies throughout the entire array to compare and see which is the highest amount according to its value.
-	GetMaxFunction:
 	li $t5, 1
 	li $t3, -10000
 	li $t1, 10
 	la $t0, SourceArray
+
+loopformax:
 	#this is the loop that takes the numbers to compare then will jump back to the main part of the function
-	loopformax:
 	lw $s0, 0($t0)
 	ble $s0, $t3, cont
 	addi $t3, $s0, 0
@@ -52,14 +53,15 @@ main:
 	move $v0, $t3
 	jr $ra
 
+GetSummationFunction:
 	#this loops the temorary registries throughout the entire arrya to add them up to find the total summation of the array
-	GetSummationFunction:
 	li $t5, 1
 	li $t3, 0
 	li $t1, 10
 	la $t0, SourceArray
+	
+loopforsummation:
 	#this is the loop which adds every number until the end of the array is reached then jumps back to the main function 
-	loopforsummation:
 	lw $s0, 0($t0)
 	add $t3, $t3, $s0
 	addi $t0, $t0, 4
