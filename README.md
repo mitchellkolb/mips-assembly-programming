@@ -27,7 +27,7 @@
 
 Developed MIPS assembly programs using QtSPIM, including a simple calculator for basic arithmetic operations and array manipulation functions to find the maximum value and summation. This project demonstrates an application of my knowledge while learning computer architecture concepts and low-level programming.
 
-![project image](resources/image1.png)
+![project image](resources/assembly-gif.gif)
 
 <details>
 <summary style="color:#5087dd">Watch the Full Video Demo Here</summary>
