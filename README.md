@@ -32,7 +32,7 @@ I developed two MIPS assembly programs using QtSPIM, including a simple calculat
 <details>
 <summary style="color:#5087dd">Watch the Full Video Demo Here</summary>
 
-[![Full Video Demo Here](https://img.youtube.com/vi/VidKEY/0.jpg)](https://www.youtube.com/watch?v=VidKEY)
+[![Full Video Demo Here](https://img.youtube.com/vi/by-Q1PF2GSQ/0.jpg)](https://www.youtube.com/watch?v=by-Q1PF2GSQ)
 
 </details>
 
